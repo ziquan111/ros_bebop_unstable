@@ -1,0 +1,7 @@
+<launch>
+  <node name="bebop_driver" pkg="bebop_driver" type="bebop_driver">
+  </node>
+  <node name="republish" pkg="image_transport" type="republish" args="raw in:=bebop/image compressed out:=bebop/image">
+  </node>
+</launch>
+
